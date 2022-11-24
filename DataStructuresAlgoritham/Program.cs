@@ -14,7 +14,7 @@ namespace DataStructuresAlgoritham
             bool condition = true;
             while (condition)
             {
-                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3. Exit");
+                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -28,6 +28,13 @@ namespace DataStructuresAlgoritham
                         int[] arr = { 2, 5, 7, 6, 1, 4 };
                         InsertionSort insertion = new InsertionSort();
                         insertion.Sort(arr);
+                        break;
+                    case 3:
+                        Console.WriteLine("\n");
+                        int[] arr1 = { 8, 3, 5, 8, 8, 1, 4, 3, 9, 2 };
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.Bubble(arr1);
+                        Console.WriteLine("\n");
                         break;
                     default:
                         Console.WriteLine("Try Again");
