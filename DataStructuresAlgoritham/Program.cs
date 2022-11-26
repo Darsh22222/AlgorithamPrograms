@@ -14,7 +14,7 @@ namespace DataStructuresAlgoritham
             bool condition = true;
             while (condition)
             {
-                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n Exit");
+                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram\n5.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -35,6 +35,10 @@ namespace DataStructuresAlgoritham
                         BubbleSort bubbleSort = new BubbleSort();
                         bubbleSort.Bubble(arr1);
                         Console.WriteLine("\n");
+                        break;
+                    case 4:
+                        Anagram anagram = new Anagram();
+                        anagram.CheckAnagram("heart", "earth");
                         break;
                     default:
                         Console.WriteLine("Try Again");
