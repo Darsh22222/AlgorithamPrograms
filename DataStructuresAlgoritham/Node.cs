@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructuresAlgoritham
 {
-    public class Node<T> where T : IComparable<T>
+    public class Node<T>
     {
         public T data;
         public Node<T> next;

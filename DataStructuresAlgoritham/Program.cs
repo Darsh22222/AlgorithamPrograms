@@ -15,7 +15,7 @@ namespace DataStructuresAlgoritham
             while (condition)
             {
                 Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram" +
-                    "\n5.Replace String Using Regex \n6.Ordered List\n7.unorderd List\n8. Exit");
+                    "\n5.Replace String Using Regex \n6.Ordered List\n7.unorderd List\n8.Balanced Paranthesis\n9. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -61,6 +61,10 @@ namespace DataStructuresAlgoritham
                         Console.WriteLine("Sub is going to Delete");
                         unordered.Delete();
                         unordered.Display();
+                        break;
+                    case 8:
+                        BalancedParanthesis balance = new BalancedParanthesis();
+                        balance.ReadTextFile(@"C:\GetRepositry\AlgorithamPrograms\DataStructuresAlgoritham\Files\BalancedParanthesis.txt");
                         break;
                     default:
                         Console.WriteLine("Try Again");
