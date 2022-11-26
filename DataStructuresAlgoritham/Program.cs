@@ -15,7 +15,7 @@ namespace DataStructuresAlgoritham
             while (condition)
             {
                 Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram" +
-                    "\n5.Replace String Using Regex \n6.Ordered List\n7. Exit");
+                    "\n5.Replace String Using Regex \n6.Ordered List\n7.unorderd List\n8. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -51,6 +51,16 @@ namespace DataStructuresAlgoritham
                         OrderedList orderedList = new OrderedList();
                         orderedList.ReadTextFile(@"C:\GetRepositry\AlgorithamPrograms\DataStructuresAlgoritham\Files\SortingList.txt");
                         Console.WriteLine("\n");
+                        break;
+                    case 7:
+                        UnorderedList<string> unordered = new UnorderedList<string>();
+                        unordered.Add("Add");
+                        unordered.Add("Sub");
+                        Console.WriteLine("Add & Sub are Successfully Added.");
+                        unordered.Display();
+                        Console.WriteLine("Sub is going to Delete");
+                        unordered.Delete();
+                        unordered.Display();
                         break;
                     default:
                         Console.WriteLine("Try Again");
