@@ -14,7 +14,8 @@ namespace DataStructuresAlgoritham
             bool condition = true;
             while (condition)
             {
-                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram\n5.Replace String Using Regex \n6.Exit");
+                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram" +
+                    "\n5.Replace String Using Regex \n6.Ordered List\n7. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -46,15 +47,17 @@ namespace DataStructuresAlgoritham
                         stringReplace.ValidateNumber("your contact number is << contactno >>.", "8329711253");
                         stringReplace.ValidateDate("Thank you BridgeLabz << Date >>.\n", "10/10/2022");
                         break;
-
-
+                    case 6:
+                        OrderedList orderedList = new OrderedList();
+                        orderedList.ReadTextFile(@"C:\GetRepositry\AlgorithamPrograms\DataStructuresAlgoritham\Files\SortingList.txt");
+                        Console.WriteLine("\n");
+                        break;
                     default:
                         Console.WriteLine("Try Again");
                         condition = false;
                         break;
                 }
             }
-
         }
     }
 }
