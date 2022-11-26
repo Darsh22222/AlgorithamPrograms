@@ -14,7 +14,7 @@ namespace DataStructuresAlgoritham
             bool condition = true;
             while (condition)
             {
-                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram\n5.Exit");
+                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3.Bubble Sort Algorithm\n4.Anagram\n5.Replace String Using Regex \n6.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -40,6 +40,14 @@ namespace DataStructuresAlgoritham
                         Anagram anagram = new Anagram();
                         anagram.CheckAnagram("heart", "earth");
                         break;
+                    case 5:
+                        StringReplace stringReplace = new StringReplace();
+                        stringReplace.Validate("\nHello << name >>, We have your fullname as << full name >> in our system.", "Darshan");
+                        stringReplace.ValidateNumber("your contact number is << contactno >>.", "8329711253");
+                        stringReplace.ValidateDate("Thank you BridgeLabz << Date >>.\n", "10/10/2022");
+                        break;
+
+
                     default:
                         Console.WriteLine("Try Again");
                         condition = false;
